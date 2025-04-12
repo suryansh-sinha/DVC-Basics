@@ -2,3 +2,8 @@ This is a list of steps that we perform in order to understand how to perform da
 1. Create a git repo and clone it to your local machine
 2. Create a file called code.py, it will save a 'csv' file to a local folder.
 3. Do a git-commit-push before initializing DVC.
+4. Now we do 'dvc init' (creates a .dvcignore file and .dvc file)
+5. We create a new folder called S3.
+6. Now we make this S3 folder as the remote origin using `dvc remote add -d myremote S3'.
+myremote ki jagah we can use any other name like origin etc.
+7. 'dvc add data/' This command adds the data to our staging area.
